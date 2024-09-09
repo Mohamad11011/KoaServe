@@ -1,0 +1,42 @@
+{
+  "name": "koaserve",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "A basic API using Node.js with TypeScript",
+  "exports": {
+    "./lib/foo.js": "./lib/foo.cjs"
+  },
+  "main": "src/server/index.js",
+  "scripts": {
+    "dev": "ts-node src/server/index.ts",
+    "build": "tsc",
+    "start": "node dist/server/index.js"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa__cors": "^5.0.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@koa/cors": "^5.0.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.5.4",
+    "koa": "^2.15.3",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
